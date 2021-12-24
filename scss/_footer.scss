@@ -1,0 +1,77 @@
+footer{
+    background-color: black;
+    display: grid;
+    height: 400px;
+    grid-template-columns: 30%, 25%, 25%;
+    grid-template-rows: 20%, 20%, 20%, 20%;
+    grid-template-areas: "area3 area1 area2"
+                         "area3 area4 area5"
+                         "area3 area6 area7"
+                         "area8 area8 area8";
+
+                         .sobreNos{
+                            grid-area: area1;
+                            justify-self: center;
+                            color: white;
+                            font-weight: bold;
+                            font-size: 20px;
+                            text-decoration: underline;
+                        
+                        }
+                        .redes{
+                            grid-area: area2;
+                            justify-self: center;
+                            color: white;
+                            font-weight: bold;
+                            font-size: 20px;
+                            text-decoration: underline;
+                        }
+                        .donde{
+                            grid-area: area4;
+                            justify-self: center;
+                            color: white;
+                            text-decoration: none;
+                        }
+                        .donde:hover{
+                            color: rgb(132, 50, 165);
+                        }
+                        
+                        .contacto{
+                            grid-area: area6;
+                            justify-self: center;
+                            color: white;
+                            text-decoration: none;
+                        }
+                        .contacto:hover{
+                            color: rgb(132, 50, 165);
+                        }
+                        .logoFooterFc{
+                          
+                            width: 50px;
+                            height: 50px;
+                            grid-area: area5;
+                            justify-self: center;
+                            
+                        
+                        }
+                        .logoFooterIg{
+                            
+                            width: 50px;
+                            height: 50px;
+                            grid-area: area7;
+                            justify-self: center;
+                          
+                        }
+                        .logoFooter{
+                            width: 200px;
+                            height: 200px;
+                            grid-area: area3;
+                            justify-self: center;
+                        }
+                        .pFooter{
+                            grid-area: area8;
+                            justify-self: center;
+                            color: rgb(132, 50, 165);
+                            font-size: 20px;
+                        }
+}

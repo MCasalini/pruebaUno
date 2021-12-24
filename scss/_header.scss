@@ -1,0 +1,59 @@
+header{
+        background-color: black;
+        height: 350px;
+        top: 10px;
+        display: flex;
+        align-items: flex-start;
+        
+        .logoNombre{
+            display: inline-block;
+            a{text-decoration: none;
+                .logo{
+        
+                    width: 200px;
+                    height: 200px;
+                    display: inline-block;
+                    position: relative;
+                    
+                }
+            }
+            h1{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                display: inline-block;
+                color: blanchedalmond;
+                width: 200px;
+                text-align:center;
+                position: relative;
+                bottom: 20%;
+            }  
+        }
+        .barraNavegacion{
+            display: flex;
+            justify-content: end;
+            align-items: flex-end;
+            width: 100%;
+            height: 100%; 
+            
+            .navbar{
+                width: 100%;
+                bottom: 20px;
+            
+                .navbar-nav{
+                    width: 100%;
+                    background-color: rgb(132, 50, 165);
+        
+                }
+            }
+        }
+    }
+    
+ 
+
+
+
+
+
+
+
+
+

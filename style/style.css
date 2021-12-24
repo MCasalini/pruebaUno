@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+header {
+  background-color: black;
+  height: 350px;
+  top: 10px;
+  display: flex;
+  align-items: flex-start; }
+  header .logoNombre {
+    display: inline-block; }
+    header .logoNombre a {
+      text-decoration: none; }
+      header .logoNombre a .logo {
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+        position: relative; }
+    header .logoNombre h1 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      display: inline-block;
+      color: blanchedalmond;
+      width: 200px;
+      text-align: center;
+      position: relative;
+      bottom: 20%; }
+  header .barraNavegacion {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%; }
+    header .barraNavegacion .navbar {
+      width: 100%;
+      bottom: 20px; }
+      header .barraNavegacion .navbar .navbar-nav {
+        width: 100%;
+        background-color: #8432a5; }
+
+body {
+  background-color: #6d6b6b; }
+  body main {
+    background-color: #6d6b6b;
+    height: 1500px; }
+    body main .mainHome {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 500px 70px 800px;
+      grid-template-areas: "banner" "nuestrasClases" "nuestrosProductos"; }
+    body main .carousel-inner {
+      grid-area: banner;
+      width: 100%;
+      height: 100%; }
+    body main .clasesHome {
+      grid-area: nuestrasClases;
+      background-color: black;
+      text-decoration: none; }
+      body main .clasesHome a {
+        text-decoration: none; }
+        body main .clasesHome a h2 {
+          color: #8432a5;
+          text-decoration: none;
+          text-align: center; }
+        body main .clasesHome a .verClasesAca {
+          color: #8432a5;
+          text-decoration: none;
+          text-align: center;
+          font-size: 40px;
+          animation-name: opaco;
+          animation-duration: 5s;
+          animation-iteration-count: infinite; }
+
+@keyframes opaco {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+    body main .productosHome {
+      grid-area: nuestrosProductos;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center; }
+      body main .productosHome .fotoDos {
+        width: 200px;
+        height: 200px; }
+      body main .productosHome .kitFuncional {
+        width: 200px;
+        height: 200px; }
+      body main .productosHome .trx {
+        width: 200px;
+        height: 200px; }
+      body main .productosHome .nuestrosProductos {
+        color: black; }
+      body main .productosHome .fotoDos:hover {
+        width: 250px;
+        height: 250px; }
+      body main .productosHome .kitFuncional:hover {
+        width: 250px;
+        height: 250px; }
+      body main .productosHome .trx:hover {
+        width: 250px;
+        height: 250px; }
+    body main div {
+      margin-top: 20px; }
+    body main .iconoWhatsapp {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      width: 70px;
+      height: 60px; }
+
+footer {
+  background-color: black;
+  display: grid;
+  height: 400px;
+  grid-template-columns: 30%, 25%, 25%;
+  grid-template-rows: 20%, 20%, 20%, 20%;
+  grid-template-areas: "area3 area1 area2" "area3 area4 area5" "area3 area6 area7" "area8 area8 area8"; }
+  footer .sobreNos {
+    grid-area: area1;
+    justify-self: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline; }
+  footer .redes {
+    grid-area: area2;
+    justify-self: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline; }
+  footer .donde {
+    grid-area: area4;
+    justify-self: center;
+    color: white;
+    text-decoration: none; }
+  footer .donde:hover {
+    color: #8432a5; }
+  footer .contacto {
+    grid-area: area6;
+    justify-self: center;
+    color: white;
+    text-decoration: none; }
+  footer .contacto:hover {
+    color: #8432a5; }
+  footer .logoFooterFc {
+    width: 50px;
+    height: 50px;
+    grid-area: area5;
+    justify-self: center; }
+  footer .logoFooterIg {
+    width: 50px;
+    height: 50px;
+    grid-area: area7;
+    justify-self: center; }
+  footer .logoFooter {
+    width: 200px;
+    height: 200px;
+    grid-area: area3;
+    justify-self: center; }
+  footer .pFooter {
+    grid-area: area8;
+    justify-self: center;
+    color: #8432a5;
+    font-size: 20px; }
